@@ -1,0 +1,21 @@
+Criado por : Lucas Matheus Amaral Silva
+Turma : 3º Período de Sistemas de informação
+
+=========== Classes =========== 
+
+== Banco
+= Banco => Conexao : Classe responsável por executar e intermediar a conexão com banco de dados ( MariaDB ).
+= Banco => AgendamentoDao : Classe responsável por baixar e armazenar em uma LinkedList de objetos Agendamento os registros do Banco.
+= Banco => Comando : Classe responsável por gerar os relatórios SQL do sistema.
+= Banco => Parâmetro : Classe filha da classe Comando, responsável por armazenar os parâmetros do comando SQL e conter o input que o usuário inseri os valores.
+= Banco => Comandos : Classe que armazena todos os relatórios solicitados pela disciplina de Banco de Dados junto aos objetos Comando e Parâmetro.
+
+== Classe
+= Classes => Agendamento : Classe responsável por armazenar os Agendamentos/Consultas.
+= Classes => Consultas : Classes responsável por receber os agendamentos do Banco e ordernar por Nome do Profissional em uma Hashtable.
+
+== Telas
+= Telas => telaInicial : Tela inicial onde o usuário pode consultar os agendamentos e chamar outras funções do sistema (Novo, Alterar, Excluir e Relatórios).
+= Telas => agendamentoCadastro : Formulário onde o usuário pode inserir/alterar registros.
+= Telas => relatorios : Tela onde o usuário tem acesso aos relatórios da classes Comandos.
+= Telas => relatoriosDados : Tela onde é exibido o resultado dos relatórios gerados pelo sistema através de uma JTable.
